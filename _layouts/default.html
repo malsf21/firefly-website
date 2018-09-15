@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top" lang="en">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include navbar.html %}
+    {{ content }}
+    {% include footer.html %}
+		{% if page.js %}
+		<script src="{{site.baseurl}}/js/{{page.js}}"></script>
+		{% endif %}
+  </body>
+
+</html>

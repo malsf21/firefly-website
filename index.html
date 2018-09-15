@@ -1,43 +1,29 @@
-<html>
-	<head>
-		<title>Firefly AR</title>
-		<link href="./assets/favicon.png" rel="icon" type="image/png">
-		<link type="text/css" href="./assets/argon.min.css" rel="stylesheet" />
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-	</head>
-	<body class="d-flex" style="background-color:#233168;">
-		<div class="align-self-center container">
-			<main>
-				<div class="text-center">
-					<img class="d-block mx-auto my-5" src="assets/firefly-yellow.svg" style="width: 40%;" />
-					<h1 class="display-1" style="color:#EFC25B;">Firefly</h1>
-					<div class="my-4">
-						<button class="btn btn-white" style="background-color:#EFC25B; border-color:#EFC25B;"><i class="fab fa-app-store-ios"></i> App Store</button>
-						<button class="btn btn-white" style="background-color:#EFC25B; border-color:#EFC25B;"><i class="fab fa-google-play"></i> Play Store</button>
-					</div>
-					<div class="my-5 text-white">
-						<p>
-							About // Contact // Legal // Press
-						</p>
-					</div>
-					<div class="my-5">
-						<a class="btn btn-primary btn-icon" href="https://www.facebook.com/FireflyAR/"><i class="fab fa-facebook fa-2x"></i></a>
-						<a class="btn btn-danger btn-icon" href="https://www.instagram.com/fireflyargame/"><i class="fab fa-instagram fa-2x"></i></a>
-						<a class="btn btn-info btn-icon" href="https://twitter.com/FireflyAR"><i class="fab fa-twitter fa-2x"></i></a>
-					</div>
-				</div>
-			</main>
-			<footer class="text-center text-white">
-				<hr style="border-color:white;" />
-				<p>
-					About // Contact // Legal // Press
-				</p>
-				<p>&copy; 2018 Firefly</p>
-			</footer>
+---
+layout: default
+---
+
+<video autoplay muted loop id="index-video">
+  <source src="{{site.baseurl}}/vid/cans.mp4" type="video/mp4">
+</video>
+
+
+<section class="index-video-container">
+	<div class="has-text-centered has-text-white">
+		<h1 class="hero-title">Firefly AR</h1>
+		<span class="fa fa-chevron-down fa-3x animated-pulse"></span>
+	</div>
+</section>
+
+<section class="section has-background-primary has-text-white">
+	<div class="container">
+		<div class="columns is-vcentered">
+      <div class="column">
+				<img class="image-half-centered" src="{{site.baseurl}}/img/iphone-x.png"/>
+			</div>
+			<div class="column">
+				<h1 class="hero-title has-text-weight-bold">Firefly AR</h1>
+				<h2>Explore Toronto</h2>
+			</div>
 		</div>
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-		<script src="./assets/fontawesome-all.min.js"></script>
-		<script src="./assets/argon.min.js"></script>
-	</body>
-</html>
+	</div>
+</section>
