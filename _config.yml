@@ -3,8 +3,8 @@ title: Firefly AR
 email: hello@fireflyar.io
 description: >- # this means to ignore newlines until "baseurl:"
   Firefly AR!
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/firefly-website" # the subpath of your site, e.g. /blog
+url: "https://fireflyar.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: fireflyar
 
 # Build settings
