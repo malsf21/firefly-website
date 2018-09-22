@@ -18,15 +18,15 @@ title: Home
       </a>
       <br />
       <br />
-      <a class="button is-white" href="#">
-        <span class="icon"><span class="fab fa-facebook"></span></span>
-      </a>
-      <a class="button is-white" href="#">
-        <span class="icon"><span class="fab fa-instagram"></span></span>
-      </a>
-      <a class="button is-white" href="#">
-        <span class="icon"><span class="fab fa-twitter"></span></span>
-      </a>
+      {% if site.facebook_username %}
+      <a class="button is-white" href="https://www.facebook.com/{{site.facebook_username}}/"><span class="fab fa-facebook"></span></a>
+      {% endif %}
+      {% if site.twitter_username %}
+      <a class="button is-white" href="https://twitter.com/{{site.twitter_username}}"><span class="fab fa-twitter"></span></a>
+      {% endif %}
+      {% if site.instagram_username %}
+      <a class="button is-white" href="https://instagram.com/{{site.instagram_username}}"><span class="fab fa-instagram"></span></a>
+      {% endif %}
     </p>
     <p>
 	    <span class="fa fa-chevron-down fa-3x animated-pulse"></span>
@@ -121,7 +121,7 @@ title: Home
 <section class="section">
   <div class="container">
     <div class="has-text-centered">
-      <h2 class="is-size-3">See for yourself.</h2>
+      <h2 class="title is-size-3">See for yourself.</h2>
     </div>
     <br />
     <video class="image-half-centered" autoplay muted loop>
@@ -158,6 +158,7 @@ title: Home
     <h1 class="is-size-2">Keep in touch.</h1>
     <h2>Because we <span class="fa fa-heart animated-pulse" style="color:red"></span> you.</h2>
     <p>And so you'll be the first to know when new games, features, and cities join the Firefly experience.</p>
+    <br />
     <div class="field has-addons image-half-centered">
       <div class="control is-expanded">
         <input class="input" type="text" placeholder="jane.doe@gmail.com">
@@ -168,5 +169,10 @@ title: Home
         </a>
       </div>
     </div>
+    <hr />
+    <a class="button is-primary is-large" href="#">
+      <span class="icon"><span class="fab fa-app-store"></span></span>
+      <span> Download</span>
+    </a>
   </div>
 </section>
