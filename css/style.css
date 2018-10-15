@@ -9,7 +9,7 @@
 #index-video{
 	display: block;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 }
 
 .index-video-container{
